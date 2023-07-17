@@ -4,13 +4,13 @@ import java.util.stream.Collectors;
 public class Main {
 
     public static void main(String[] args) {
-        List<String> names = List.of("Tama", "Hachi", "suzuki", "Goro", "Nana");
+        List<String> names = List.of("Tama", "Pochi", "suzuki", "Goro", "Nana");
 
         long count = names.stream().filter(name -> name.contains("a")).count();
         System.out.println(count);
 
     //1回目の修正で提出したコード。この書き方で繋げてしまうと、List<String>型のnamesには代入できなくなるので❌
-        System.out.println("[複数条件で表示]");
+        System.out.println("[複数条件で表示する]");
         names = names.stream()
                 .sorted()
                 .map(String::toUpperCase)
