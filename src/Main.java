@@ -4,7 +4,7 @@ import java.util.stream.Collectors;
 public class Main {
 
     public static void main(String[] args) {
-        List<String> names = List.of("Tama", "Hachi", "suzuki", "Goro", "Nana");
+        List<String> names = List.of("Tama", "Pochi", "suzuki", "Goro", "Nana");
 
         long count = names.stream().filter(name -> name.contains("a")).count();
         System.out.println(count);
